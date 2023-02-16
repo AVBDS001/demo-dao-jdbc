@@ -8,6 +8,8 @@ import model.entities.Department;
 import model.entities.Seller;
 
 public class Program {
+	
+	/*PAREI NA AULA 284*/
 
 	public static void main(String[] args) {
 		Department obj = new Department(1, "BOOKS");
@@ -23,6 +25,12 @@ public class Program {
 		
 		for (Seller obj1 : list) {
 			System.out.println(obj1);
+		}
+		
+		System.out.println("\n===TESTE2: SELLER FINDBYID ===");
+		list = sellerDao.findAll();
+		for (Seller obj2 : list) {
+			System.out.println(obj2);
 		}
 
 	}
